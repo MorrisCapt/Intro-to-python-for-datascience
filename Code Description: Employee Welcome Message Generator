@@ -1,0 +1,15 @@
+new_employee = ["Morris", "Moka", "Junior"]
+welcome_messages = []
+for new_employee in new_employee:
+    welcome_messages.append("Hi " + new_employee.title() + ", I'm so glad to be working with you!")
+welcome_messages
+
+
+def greet_employees():
+    welcome_messages = []
+    for new_employee in new_employees:
+        welcome_messages.append("Hi " + new_employee.title() + ", I'm so glad to be working with you!")
+    return welcome_messages
+
+new_employees = ["Rob","Frank", "Don"]
+greet_employees()
