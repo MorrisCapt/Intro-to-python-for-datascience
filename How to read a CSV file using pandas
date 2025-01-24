@@ -1,0 +1,9 @@
+import pandas as pd
+try:
+    df = pd.read_csv(r'C:\Users\MORRIS CAPT\Documents\LuxDev Academy\train_data_cross-sell.csv',  encoding='latin1')
+    #Now, rename the column
+    df.rename(columns={'ÿid': 'id'}, inplace=True)
+except Exception as e:
+    print("Error reading csv file:", e)
+df.head(10)
+
